@@ -1,1 +1,24 @@
 // Mixins in here
+
+.buttons (@width, @fontsize, @bgcolor, @radius) {
+    width: @width;
+    padding: 3% 0;
+    color: white;
+    font-size: @fontsize;
+    background: @bgcolor;
+    text-align: center;
+    border-radius: @radius;
+}
+
+.mobile-width {
+    @media @mobile {
+        width: 100%;
+    }
+}
+
+.tablet-vp {
+    @media @tablet {
+        width: 100%;
+        flex-direction: column;
+    }
+}
